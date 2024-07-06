@@ -11,16 +11,36 @@
 -
 Изгледот на играта:
   Главен екран
+
+  
   ![Screenshot 2024-07-06 172148](https://github.com/AngelJovanovski/PongGame/assets/162117533/822a50b4-3831-4a3b-b379-a9d05c4692c3)
 
+
+
+
   Gameplay екран
+
+  
   ![Screenshot 2024-07-06 172228](https://github.com/AngelJovanovski/PongGame/assets/162117533/7c7289f7-2360-4a1c-939d-7a12630b5069)
 
+
+
+
   Win екран
+
+  
   ![Screenshot 2024-07-06 172254](https://github.com/AngelJovanovski/PongGame/assets/162117533/6c78b793-161c-43de-8ccd-3a09973bc93f)
 
+
+
+
   Lose екран
+
+  
   ![Screenshot 2024-07-06 172334](https://github.com/AngelJovanovski/PongGame/assets/162117533/672935e0-388a-48ec-a076-7f0562a1c55e)
+
+
+
 
 
 Правила на играта се следни:
