@@ -29,75 +29,81 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbBall = new System.Windows.Forms.PictureBox();
+            this.pbComputer = new System.Windows.Forms.PictureBox();
+            this.pbPlayer = new System.Windows.Forms.PictureBox();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbComputer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox3
+            // pbBall
             // 
-            this.pictureBox3.Image = global::PONG_GAME.Properties.Resources.savenew;
-            this.pictureBox3.Location = new System.Drawing.Point(515, 279);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.pbBall.Image = global::PONG_GAME.Properties.Resources.savenew;
+            this.pbBall.Location = new System.Drawing.Point(386, 227);
+            this.pbBall.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbBall.Name = "pbBall";
+            this.pbBall.Size = new System.Drawing.Size(25, 25);
+            this.pbBall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbBall.TabIndex = 2;
+            this.pbBall.TabStop = false;
             // 
-            // pictureBox2
+            // pbComputer
             // 
-            this.pictureBox2.Image = global::PONG_GAME.Properties.Resources.dark_red_color_solid_background_1920x1080;
-            this.pictureBox2.Location = new System.Drawing.Point(1019, 223);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 150);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pbComputer.Image = global::PONG_GAME.Properties.Resources.dark_red_color_solid_background_1920x1080;
+            this.pbComputer.Location = new System.Drawing.Point(763, 181);
+            this.pbComputer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbComputer.Name = "pbComputer";
+            this.pbComputer.Size = new System.Drawing.Size(28, 110);
+            this.pbComputer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbComputer.TabIndex = 1;
+            this.pbComputer.TabStop = false;
             // 
-            // pictureBox1
+            // pbPlayer
             // 
-            this.pictureBox1.Image = global::PONG_GAME.Properties.Resources.blue_still1_fr_1713295206;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 223);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbPlayer.Image = global::PONG_GAME.Properties.Resources.blue_still1_fr_1713295206;
+            this.pbPlayer.Location = new System.Drawing.Point(9, 181);
+            this.pbPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbPlayer.Name = "pbPlayer";
+            this.pbPlayer.Size = new System.Drawing.Size(28, 110);
+            this.pbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPlayer.TabIndex = 0;
+            this.pbPlayer.TabStop = false;
             // 
             // gameTimer
             // 
             this.gameTimer.Enabled = true;
-            this.gameTimer.Interval = 20;
+            this.gameTimer.Interval = 16;
             this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick);
             // 
             // StartPongGameForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1069, 619);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(802, 503);
+            this.Controls.Add(this.pbBall);
+            this.Controls.Add(this.pbComputer);
+            this.Controls.Add(this.pbPlayer);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "StartPongGameForm";
             this.Text = "Player: 0 --- Computer: 0";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.StartPongGameForm_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.StartPongGameForm_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pbBall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbComputer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbPlayer;
+        private System.Windows.Forms.PictureBox pbComputer;
+        private System.Windows.Forms.PictureBox pbBall;
         private System.Windows.Forms.Timer gameTimer;
     }
 }

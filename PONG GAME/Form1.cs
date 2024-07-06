@@ -15,13 +15,8 @@ namespace PONG_GAME
         public Form1()
         {
             InitializeComponent();
+            this.MaximumSize = this.Size;
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             StartPongGameForm s = new StartPongGameForm();
